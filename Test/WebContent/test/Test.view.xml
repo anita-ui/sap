@@ -1,0 +1,76 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="test.Test" xmlns:html="http://www.w3.org/1999/xhtml"
+			xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+			<SplitApp id="SplitAppDemo" initialDetail="detail" initialMaster="master" orientationChange="onOrientationChange">
+			<detailPages>
+			<Page id="detail" title="Employee Details" class="sapUiStdPage">
+				<content>
+					<VBox class="sapUiSmallMargin">
+					<Label text="EmployeeID" />
+					<Text text="LMN1089" />
+						<Label text="Employee Name:" />
+						<Text text="Anita Devi" />
+						<Label text="ContactNo:"/>
+						<Text text="8974536123"/>
+						<Label text="EmailId:"/>
+						<Text text="adssad@gmail.com"/>
+						<Label text="Designation:"/>
+						<Text text= "Software Trainee"/>
+						
+					</VBox>
+				</content>
+			</Page>
+			<Page id="detail2" title="Employee Details" class="sapUiStdPage">
+				<content>
+					<VBox class="sapUiSmallMargin">
+					<Label text="EmployeeID" />
+					<Text text="LMN1589" />
+						<Label text="Employee Name:" />
+						<Text text="gilby" />
+						<Label text="ContactNo:"/>
+						<Text text="9142366587"/>
+						<Label text="EmailId:"/>
+						<Text text="dfsdh@gmail.com"/>
+						<Label text="Designation:"/>
+						<Text text= "SAP Engineer"/>
+						
+					</VBox>
+				</content>
+			</Page>
+			<Page id="detailDetail" title="Employee Details" class="sapUiStdPage">
+				<content>
+					<VBox class="sapUiSmallMargin">
+					<Label text="EmployeeID" />
+					<Text text="LMN1789" />
+						<Label text="Employee Name:" />
+						<Text text="Sishanchi" />
+						<Label text="ContactNo:"/>
+						<Text text="9852356147"/>
+						<Label text="EmailId:"/>
+						<Text text="eufge@gmail.com"/>
+						<Label text="Designation:"/>
+						<Text text= "IoT Engineers"/>
+						
+					</VBox>
+				</content>
+			</Page>
+			</detailPages>
+	
+	<masterPages>
+			
+			<Page id="master2" title="List of Employees"  class="sapUiStdPage" 
+					navButtonPress="onPressMasterBack">
+				<content>
+				
+					 <List itemPress="onListItemPress">
+						<items>
+							<StandardListItem title="LMN1089" type="Active" custom:to="detail"/>
+							<StandardListItem title="LMN1789" type="Active" custom:to="detailDetail"/>
+							<StandardListItem title="LMN1589" type="Active" custom:to="detail2"/>
+						</items>
+					</List> 
+				</content>
+			</Page>
+		</masterPages>
+	</SplitApp>
+</core:View>
