@@ -1,0 +1,121 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="new.Lumbini" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<Page title="Title">
+		<content>
+	<Image src="image/cinema.png" tooltip="Movie illustration" width="100%" press="sap.m.MessageToast.show('Do you feel like going to the movies?')"
+						></Image>
+		<f:SimpleForm id="form" editable="true" layout="ColumnLayout" title="Find Movies" columnsM="2" columnsL="3" columnsXL="3">
+<f:content>
+						
+		<Label text="City" labelFor="city"/>
+        <SearchField id="city" width="100%" showSearchButton="false" placeholder="Enter City"/>
+        <Label text="Genre" labelFor="genre"/>
+        <Select id="genre">
+      
+       <core:ListItem icon="sap-icon://video" key="" text="All"/>
+       <core:ListItem icon="sap-icon://physical-activity" key="Action" text="Action"/>
+       <core:ListItem icon="sap-icon://electrocardiogram" key="Horror" text="Horror"/>
+        <core:ListItem icon="sap-icon://paper-plane" key="ScienceFiction" text="Science Fiction"/>
+         </Select>
+          <Label/>
+          <Button text="Find Movies" class="sapUiSmallMarginTop" type="Emphasized" press=".onPress('for Movies!')"/>
+          </f:content>
+    </f:SimpleForm>
+    	<Table id="idProductsTable"
+		inset="false"
+		items="{/EmployeeDetails}">
+<!-- 		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="Products" level="H2"/>
+					<ToolbarSpacer />
+					<ComboBox id="idPopinLayout"
+						placeholder="Popin layout options"
+						change="onPopinLayoutChanged">
+						<items>
+							<core:Item  text="Block"
+								key="Block"/>
+							<core:Item  text="Grid Large"
+								key="GridLarge"/>
+							<core:Item  text="Grid Small"
+								key="GridSmall"/>
+						</items>
+					</ComboBox>
+					<MultiComboBox id="idSticky"
+						placeholder="Sticky options"
+						selectionFinish="onSelectionFinish"
+						width="15%">
+						<layoutData>
+							<ToolbarLayoutData minWidth="4rem"/>
+						</layoutData>
+						<items>
+							<core:Item  text="Column headers"
+								key="ColumnHeaders"/>
+							<core:Item  text="Header Toolbar"
+								key="HeaderToolbar"/>
+							<core:Item  text="Info Toolbar"
+								key="InfoToolbar"/>
+						</items>
+					</MultiComboBox>
+					<ToggleButton id="toggleInfoToolbar"
+						text="Hide/Show InfoToolbar"
+						press="onToggleInfoToolbar" />
+				</content>
+			</OverflowToolbar>
+		</headerToolbar> -->
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text="Employee Details"/>
+			</OverflowToolbar>
+		</infoToolbar>
+		<columns>
+			<Column>
+				<Text text="Employee ID" />
+			</Column>
+			<Column>
+				<Text text="Employee Name" />
+			</Column>
+			<Column>
+				<Text text="Contact No." />
+			</Column>
+			<Column
+>
+				<Text text="Designation" />
+			</Column>
+			<Column>
+				<Text text="Salary" />
+			</Column>
+			<Column>
+				<Text text="Email Id" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text
+						
+						text="{EmployeeID}"/>
+					<Text
+						text="{EmployeeName}" />
+					<Text
+						text="{ContactNo}" />
+					<Text
+						
+						text="{Designation}" />
+					<Text text="{Salary}" />
+							
+							<Text text="{EmailId}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+		</content>
+			<footer>
+							<OverflowToolbar id="otbFooter">
+							<ToolbarSpacer/>
+							<Link emphasized="true" target="_blank" href="https://www.imdb.com" text="Explore the IMDb Movie Database"/>
+						
+						</OverflowToolbar>
+					</footer>
+	</Page>
+</core:View>

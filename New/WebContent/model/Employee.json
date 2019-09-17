@@ -1,0 +1,75 @@
+{
+	"EmployeeDetails": [
+	{
+		"EmployeeID": "LMN1089",
+		"EmployeeName": "Anita Devi",
+		"ContactNo": 8974536123,
+		"Designation": "Software Trainee",
+		"Salary": 6000,
+		"EmailId": "adssad@gmail.com"
+
+	}, {
+		"EmployeeID": "LMN1789",
+		"EmployeeName": "Sishanchi",
+		"ContactNo": 9852356147,
+		"Designation": "IoT Engineers",
+		"Salary": 10000,
+		"EmailId": "eufge@gmail.com"
+	}, {
+		"EmployeeID": "LMN1589",
+		"EmployeeName": "gilby",
+		"ContactNo": 9142366587,
+		"Designation": "SAP Engineer",
+		"Salary": 11000,
+		"EmailId": "dfsdh@gmail.com"
+	}, {
+		"EmployeeID": "LMN1852",
+		"EmployeeName": "Shreya",
+		"ContactNo": 89745641230,
+		"Designation": "SAP ABAP Engineer",
+		"Salary": 10000,
+		"EmailId": "mbug@gmail.com"
+	}, {
+		"EmployeeID": "LMN1963",
+		"EmployeeName": "Sonam",
+		"ContactNo": 89865235147,
+		"Designation": "SAPUI5 Developer",
+		"Salary": 10000,
+		"EmailId": "etfey@gmail.com"
+	}, {
+		"EmployeeID": "LMN1432",
+		"EmployeeName": "Anupama",
+		"ContactNo": 8965174123,
+		"Designation": "HR",
+		"Salary": 40000,
+		"EmailId": "gfsudy@gmail.com"
+	}, {
+		"EmployeeID": "LMN1147",
+		"EmployeeName": "Rajeev",
+		"ContactNo": 78994856321,
+		"Designation": "Director",
+		"Salary": 60000,
+		"EmailId": "yfufg@gmail.com"
+	}, {
+		"EmployeeID": "LMN1145",
+		"EmployeeName": "Jambu",
+		"ContactNo": 74589463210,
+		"Designation": "Sr.Ui Developer",
+		"Salary": 20000,
+		"EmailId": "kjhh@gmail.com"
+	}, {
+		"EmployeeID": "LMN1654",
+		"EmployeeName": "Avishek",
+		"ContactNo": 78954663210,
+		"Designation": "Admin",
+		"Salary": 10000,
+		"EmailId": "tyt@gmail.com"
+	}, {
+		"EmployeeID": "LMN1456",
+		"EmployeeName": "Ahmat",
+		"ContactNo": 87945610230,
+		"Designation": "UI Developer",
+		"Salary": 6000,
+		"EmailId": "safd@gmail.com"
+	}]
+}
